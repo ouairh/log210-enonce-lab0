@@ -272,7 +272,7 @@ Vous pouvez cocher chaque étape dans la liste suivante:
 
 ### 1. Actualiser la documentation de la fonctionnalité
 
-> Note: il est fortement recommandé de faire un commit (et push) du code (au moins) à la fin de chaque étape à partir de maintenant. Les auxiliaires d'enseignement auront accès à votre dépôt de code source et pourraient vous aider (surtout à distance) si votre code est synchronisé souvent avec le dépôt. Rappel: [Présentation de GitHub dans Visual Studio Code](https://learn.microsoft.com/fr-ca/training/modules/introduction-to-github-visual-studio-code/).
+> Note: il est fortement recommandé de faire un commit et push du code **sur la branche master** (puisque le travail est individuel) au moins à la fin de chaque étape à partir de maintenant. Les auxiliaires d'enseignement auront accès à votre dépôt de code source et pourraient vous aider (surtout à distance) si votre code est synchronisé souvent avec le dépôt. Rappel: [Présentation de GitHub dans Visual Studio Code](https://learn.microsoft.com/fr-ca/training/modules/introduction-to-github-visual-studio-code/).
 
 La documentation des fonctionnalités se trouve dans le fichier [docs/Squelette.md](docs/Squelette.md). Dans cette étape, vous devez:
 
@@ -563,7 +563,7 @@ Assurez-vous qu'aucun test n'est en échec et que la couverture de test (`branch
 La seule rétroaction pour ce laboratoire est à travers les commandes ci-dessus.
 Vous n'aurez pas de rétroaction individuelle après la date de remise, alors si vous avez des tests qui ne passent pas ou des questions concernant les technologies, **c'est votre responsabilité de demander de l'aide de l'auxiliaire de laboratoire avant la remise.**
 
-### 11. Remettre (anglais *commit*) tous les changements
+### 11. Remettre (anglais *commit*) tous les changements sur la branche `master`
 
 - [ ] À l'aide de Zoom ou de tout autre outil d'enregistrement vidéo, enregistrez une démonstration du fonctionnement de l'interface utilisateur avec au moins 2 joueurs.  Sauvegarder le résultat dans le fichier **demo.mp4** et placer ce fichier dans le même répertoire que README.md.
 - [ ] Faire une remise de la solution du projet (GitHub) incluant votre réponse dans `docs/experience-parasites-mollassons.md`
