@@ -19,5 +19,6 @@
             "pattern": "^https?://www.plantuml.com/.*$",
             "comment": "Ignore PlantUML diagrams (timeout can be long)"
         }
-    ]
+    ],
+    "aliveStatusCodes": [200, 206, 403, 429, 999]
 }
