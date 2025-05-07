@@ -1,14 +1,27 @@
 {
   "preset": "ts-jest",
-  "testEnvironment": "jest-environment-node",
-  "setupFilesAfterEnv": ["jest-extended/all"],
-  "collectCoverageFrom": ["src/**/*.ts"],
-  "coveragePathIgnorePatterns": ["index.ts","express-flash-plus.d.ts"],
+  "collectCoverageFrom": [
+    "src/**/*.ts"
+  ],
+  "coveragePathIgnorePatterns": [
+    "index.ts",
+    "express-flash-plus.d.ts"
+  ],
+  "coverageDirectory": "coverage",
+  "coverageProvider": "babel",
   "transform": {
-    "^.+\\.tsx?$": ["ts-jest", 
-      { "diagnostics:": true, 
+    "^.+\\.tsx?$": [
+      "ts-jest",
+      {
+        "diagnostics": true,
         "isolatedModules": true,
-        "tsconfig": "./tsconfig.json" }
+        "tsconfig": "./tsconfig.json"
+      }
     ]
-  }
+  },
+  "testEnvironment": "jest-environment-node",
+  "setupFilesAfterEnv": [
+    "jest-extended/all"
+  ],
+  "verbose": false
 }
