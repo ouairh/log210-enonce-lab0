@@ -1,5 +1,6 @@
 import { Router, Request, Response, NextFunction } from 'express';
 import { JeuDeDes } from '../core/jeuDeDes';
+
 import { InvalidParameterError } from '../core/errors/invalidParameterError';
 
 export class JeuRouter {
@@ -105,6 +106,18 @@ export class JeuRouter {
       this._errorCode500(error, req, res);
     }
   }
+  /**
+   * redemarrerJeu
+   */
+
+  public redemarrerJeu(req : Request, res:Response) {
+
+    this.controleurJeu.redemarrerJeu();
+      req.flash('info', "Jeu redémarre.");
+      return res.status(200).json({ message: 'Success'});
+
+  }
+
 
   /**
      * Take each handler, and attach to one of the Express.Router's
@@ -114,6 +127,7 @@ export class JeuRouter {
     this._router.post('/demarrerJeu', this.demarrerJeu.bind(this)); // pour .bind voir https://stackoverflow.com/a/15605064/1168342
     this._router.get('/jouer/:nom', this.jouer.bind(this)); // pour .bind voir https://stackoverflow.com/a/15605064/1168342
     this._router.get('/terminerJeu/:nom', this.terminerJeu.bind(this)); // pour .bind voir https://stackoverflow.com/a/15605064/1168342
+    this._router.get('/redemarrerJeu', this.redemarrerJeu.bind(this)); 
   }
 
 }
